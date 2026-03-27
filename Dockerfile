@@ -6,6 +6,6 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY arubauth.py .
+COPY aruba port-security.py .
 
 CMD ["python", "aruba port-security.py"]
